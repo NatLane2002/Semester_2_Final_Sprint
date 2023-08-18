@@ -1,0 +1,109 @@
+{
+  "dreams": [
+    {
+      "date": "August 13, 2023",
+      "title": "Sand Surfing",
+      "mood": "Energetic",
+      "perceivedDuration": "2 Hours",
+      "setting": "The Sahara Desert",
+      "people": "Mom, Dad",
+      "description": "Experience the thrill of sand surfing through the Sahara's mesmerizing dunes, a captivating blend of adrenaline and serenity. Glide down golden waves, feel the connection to nature and timeless traditions, and pause to admire the stunning panorama. Sand surfing in the Sahara is an adventure that embodies change, solitude, and the enchanting allure of the sands.",
+      "recurring": false,
+      "lucid": true,
+      "user": {
+        "username": "NatLane2002",
+        "email": "nathaniellane@hotmail.com",
+        "password": "seka",
+        "joinDate": "August 8, 2023",
+        "id": 1
+      },
+      "username": "NatLane2002",
+      "email": "nathaniellane@hotmail.com",
+      "id": 1
+    },
+    {
+      "date": "August 13, 2023",
+      "title": "Magic Forest",
+      "mood": "Peaceful",
+      "perceivedDuration": "2-24 Hours",
+      "setting": "Rain Forest",
+      "people": "Just me",
+      "description": "Find tranquility in the heart of a magical forest, where time stands still amid serene surroundings. Embrace the soothing whispers of nature, bask in the dappled sunlight, and let the enchanting aura of the woods wash over you in a peaceful symphony of harmony.",
+      "recurring": false,
+      "lucid": false,
+      "user": {
+        "username": "NatLane2002",
+        "email": "nathaniellane@hotmail.com",
+        "password": "seka",
+        "joinDate": "August 8, 2023",
+        "id": 1
+      },
+      "username": "NatLane2002",
+      "email": "nathaniellane@hotmail.com",
+      "id": 2
+    },
+    {
+      "date": "August 13, 2023",
+      "title": "Frontlines",
+      "mood": "Sad",
+      "perceivedDuration": "> 1 Day",
+      "setting": "Frontlines",
+      "people": "My Squad and I",
+      "description": "Amid the chaos of the frontlines, courage shines as soldiers stand unwavering in the face of adversity. Sacrifice and camaraderie fuel their resolve, forging bonds that transcend the battlefield's harsh reality.",
+      "recurring": true,
+      "lucid": false,
+      "user": {
+        "username": "ShaLane",
+        "email": "laneshallum@gmail.com",
+        "password": "poo",
+        "joinDate": "August 9, 2023",
+        "id": 2
+      },
+      "username": "ShaLane",
+      "email": "laneshallum@gmail.com",
+      "id": 3
+    },
+    {
+      "date": "August 13, 2023",
+      "title": "Coding",
+      "mood": "Optimistic",
+      "perceivedDuration": "2 Hours",
+      "setting": "Work Office",
+      "people": "Just Me",
+      "description": "In the realm of code, creativity meets logic to craft digital wonders. Lines intertwine, algorithms dance, and solutions emerge from the symphony of keystrokes, shaping the future one command at a time.",
+      "recurring": false,
+      "lucid": true,
+      "user": {
+        "username": "NatLane2002",
+        "email": "nathaniellane@hotmail.com",
+        "password": "seka",
+        "joinDate": "August 8, 2023",
+        "id": 1
+      },
+      "username": "NatLane2002",
+      "email": "nathaniellane@hotmail.com",
+      "id": 4
+    },
+    {
+      "date": "August 18, 2023",
+      "title": "eifjakl",
+      "mood": "Excited",
+      "perceivedDuration": "< 30 Minutes",
+      "setting": "efaseffas",
+      "people": "efasef",
+      "description": "fasef",
+      "recurring": true,
+      "lucid": false,
+      "user": {
+        "username": "NatLane2002",
+        "email": "nathaniellane@hotmail.com",
+        "password": "seka",
+        "joinDate": "August 8, 2023",
+        "id": 1
+      },
+      "username": "NatLane2002",
+      "email": "nathaniellane@hotmail.com",
+      "id": 5
+    }
+  ]
+}

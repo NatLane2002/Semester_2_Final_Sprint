@@ -1,0 +1,25 @@
+{
+  "regUsers": [
+    {
+      "username": "NatLane2002",
+      "email": "nathaniellane@hotmail.com",
+      "password": "seka",
+      "joinDate": "August 8, 2023",
+      "id": 1
+    },
+    {
+      "username": "ShaLane",
+      "email": "laneshallum@gmail.com",
+      "password": "poo",
+      "joinDate": "August 9, 2023",
+      "id": 2
+    },
+    {
+      "username": "mackenzie.s.ballard",
+      "email": "mackenzie.s.ballard@gmail.com",
+      "password": "Mack3nz13",
+      "joinDate": "August 9, 2023",
+      "id": 3
+    }
+  ]
+}

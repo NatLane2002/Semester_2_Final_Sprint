@@ -1,0 +1,1602 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #a4bdff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  border-bottom: 2px solid black;
+}
+
+.page {
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 40px;
+  background-color: white;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.headingTitle {
+  color: black;
+  position: absolute;
+  left: 40px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.link {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+
+.link:hover {
+  color: rgb(78, 78, 78);
+}
+
+.selected {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.selected:hover {
+  color: black;
+}
+
+/* Apply a flexbox layout to ensure the footer sticks to the bottom */
+.footer {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Set a fixed height for the footer */
+  border-top: 3px solid black;
+}
+
+/* Style the navigation container */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 680px;
+  height: 270px;
+  position: absolute;
+  top: 85px;
+  z-index: -1;
+}
+
+.textInCloud {
+  position: absolute;
+  font-size: 27px;
+  font-family: "Poppins";
+  width: 450px;
+  text-align: center;
+  top: 191px;
+  font-weight: bold;
+  left: 745px;
+  text-shadow: 5px 5px 5px rgb(97, 97, 97);
+  height: 100px;
+}
+
+.box {
+  background: rgba(88, 130, 193, 0.28);
+  backdrop-filter: blur(11.500000953674316px);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.homePageTextBox {
+  border-radius: 0px 37px;
+  width: 1100px;
+  height: 510px;
+  margin-top: 30px;
+  position: absolute;
+  top: 300px;
+  left: 405px;
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  padding: 20px;
+  text-align: left;
+  font-size: 18.5px;
+  text-shadow: 5px 5px 5px rgb(83, 83, 83);
+  font-weight: bold;
+}
+
+.subHeading {
+  font-size: 21px;
+}
+
+.loginForm label,
+.addDreamBox label {
+  display: block;
+  font-weight: normal;
+  font-size: 17px;
+  margin-bottom: -25px;
+}
+
+.loginForm input,
+.addDreamBox input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.loginForm button,
+.addDreamBox button {
+  width: 80%;
+  padding: 10px;
+  background-color: #003465;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.loginForm button:hover,
+.addDreamBox button:hover {
+  background-color: #024786;
+}
+
+.loginText,
+.addDreamBox {
+  padding-bottom: 10px;
+}
+
+.textUnderLoginForm {
+  font-size: 12px;
+  position: absolute;
+  bottom: 70px;
+  left: 130px;
+  font-weight: normal;
+}
+
+.registerForFreeText {
+  color: white;
+  font-weight: bold;
+}
+
+.registerForFreeText:hover {
+  color: silver;
+  cursor: pointer;
+}
+
+.loginBox {
+  border-radius: 37px;
+  width: 630px;
+  height: 500px;
+  margin-top: 115px;
+  padding-top: 50px;
+  padding-left: 100px;
+  color: white;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  border: 1px solid #003465;
+}
+
+.strangeShapeImg1,
+.strangeShapeImg2,
+.strangeShapeImg3 {
+  position: fixed;
+  z-index: -1;
+}
+
+.strangeShapeImg1 {
+  width: 400px;
+  height: 400px;
+  top: -160px;
+  left: -140px;
+}
+
+.strangeShapeImg2 {
+  bottom: -290px;
+  left: -160px;
+  width: 700px;
+  height: 700px;
+}
+
+.strangeShapeImg3 {
+  bottom: 70px;
+  left: 380px;
+  width: 400px;
+  height: 400px;
+}
+
+.loginPage {
+  overflow: hidden;
+}
+
+.dreamsPage h1 {
+  text-align: center;
+  font-size: 75px;
+  color: white;
+  text-shadow: 5px 5px 6px rgb(99, 98, 98);
+}
+
+.dreamTileBox,
+.addDreamBox {
+  margin-top: 50px;
+  border: 2px solid #024786;
+  width: 500px;
+  height: 280px;
+  border-radius: 37px;
+  font-family: "Poppins";
+  padding: 20px;
+  text-align: left;
+}
+
+.dreamTileBox h2,
+p {
+  padding-bottom: 5px;
+}
+
+.dreamTileBox p {
+  margin-top: 1px;
+}
+
+.dreamTileBox h2 {
+  padding-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dreamsPage {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.dreamsContent {
+  max-height: calc(
+    100vh - 356px
+  ); /* Adjust based on header and footer heights */
+  overflow-y: auto;
+  padding: 0 20px;
+  margin-left: 9px;
+  box-sizing: border-box;
+  color: black;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.hr {
+  width: 500px;
+  border-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Light gray background color of the track */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7087ac; /* Light blue color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4783d1; /* Darker blue color of the scrollbar handle on hover */
+}
+
+.moodCircle {
+  background-color: white;
+  position: absolute;
+  width: 180px;
+  left: 0px;
+  margin-top: -125px;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.moodText {
+  position: absolute;
+  left: -2px;
+  margin-top: 5px;
+  width: 180px;
+  height: 40px;
+}
+
+.addDreamCircleBtn {
+  position: fixed;
+  color: black;
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 70px;
+  cursor: pointer;
+  font-weight: bolder;
+  bottom: 130px;
+  right: 75px;
+}
+
+.addDreamCircleBtnText {
+  position: fixed;
+  right: 102px;
+  bottom: 141px;
+}
+
+.addDreamCircleBtn:hover {
+  position: fixed;
+  background: rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 70px;
+  cursor: pointer;
+  font-weight: bolder;
+  bottom: 130px;
+  right: 75px;
+  background-color: rgba(0, 98, 128, 0.151);
+  color: white;
+  text-shadow: 4px 4px 4px gray;
+}
+
+.privacyPage h1 {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  font-family: monospace;
+}
+
+.profilePage {
+  max-height: calc(100vh - 199px);
+}
+
+.privacyPage {
+  max-height: calc(
+    100vh - 199px
+  ); /* Adjust based on header and footer heights */
+  overflow-y: auto;
+  margin-left: 9px;
+  box-sizing: border-box;
+  color: black;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  margin-top: -2px;
+  width: 965px;
+  height: 762px;
+  padding-top: 30px;
+  padding-left: 20px;
+  font-family: "Poppins";
+  text-align: left;
+}
+
+.privacyPage li,
+.privacyPage p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.privacyPage h2 {
+  font-family: monospace;
+  font-size: 28px;
+  padding: 15px;
+  margin-left: -20px;
+}
+
+/* Customize the appearance of the scrollbar thumb */
+.privacyPage::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.privacyPage::-webkit-scrollbar-track {
+  border-radius: 0px;
+  border-top: 2px solid black;
+}
+
+.bottomLi {
+  padding-bottom: 25px;
+}
+
+.blueBorderLine {
+  background-color: #024786;
+  height: 1px;
+  width: 225px;
+  position: absolute;
+  bottom: -1px;
+  left: 80px;
+}
+
+.loginTextDiv {
+  position: absolute;
+  bottom: 17px;
+  left: 292px;
+  font-size: 13px;
+}
+
+.addDreamBox {
+  margin-top: 30px;
+  width: 500px;
+  height: 700px;
+  border: 1px solid #024786;
+  box-shadow: 48px 20px 40px rgb(59, 71, 90);
+}
+
+.addDreamBox {
+  border-radius: 37px;
+  padding: 40px;
+  padding-left: 75px;
+}
+
+.addDreamBox form button {
+  width: 90%;
+}
+
+.dreamForm input {
+  margin-top: 30px;
+  position: relative;
+}
+
+textarea.formTextarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  resize: none;
+  margin-top: 30px;
+}
+
+.addDreamBox form input {
+  width: 90%;
+}
+
+.addDreamBox button {
+  margin-top: 50px;
+}
+
+.addDreamPage {
+  font-family: "Poppins";
+  color: white;
+}
+
+.dreamEntryText {
+  margin-top: -22px;
+  margin-bottom: 5px;
+  text-shadow: 5px 5px 5px gray;
+}
+
+.checkBoxLabel1 {
+  position: absolute;
+  left: 78px;
+  bottom: 126px;
+  font-weight: 700;
+}
+
+.checkBoxLabel2 {
+  position: absolute;
+  font-weight: 700;
+  left: 344px;
+  bottom: 126px;
+}
+
+.formCheckbox1 {
+  position: absolute;
+  left: 60px;
+  bottom: -30px;
+}
+
+.formCheckbox2 {
+  position: absolute;
+  left: 40px;
+  bottom: -30px;
+}
+
+.contactPageContentContainer {
+  font-family: "Poppins";
+  text-align: left;
+  width: 1440px;
+  height: 718px;
+  padding-left: 50px;
+}
+
+.getInTouchHeading {
+  margin-left: 40px;
+  font-weight: normal;
+  font-size: 34px;
+  margin-top: 40px;
+  color: #003465;
+}
+
+.getInTouchPara {
+  margin-left: 40px;
+  width: 350px;
+  font-size: 15px;
+}
+
+.contactPageFormBox {
+  margin-top: 20px;
+  width: 500px;
+  height: 520px;
+  border: 1px solid #003465;
+  margin-left: 40px;
+  border-radius: 37px;
+}
+
+.contactPageContactInfoBox {
+  margin-top: 31px;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  position: absolute;
+  right: 400px;
+  border-radius: 37px;
+  box-shadow: 0px 0px 100px #000f1d;
+  border: 1px solid #003465;
+  top: 200px;
+  padding: 170px;
+  padding-top: 50px;
+  padding-right: 70px;
+}
+
+.contactPageContactInfoBox h2 {
+  padding-top: 30px;
+}
+
+.icon {
+  font-size: 50px;
+  position: absolute;
+  right: 450px;
+}
+
+.locationIcon {
+  top: 81px;
+}
+
+.phoneIcon {
+  top: 180px;
+  font-size: 47px;
+}
+
+.clockIcon {
+  top: 275px;
+}
+
+.emailIcon {
+  top: 430px;
+  font-size: 45px;
+}
+
+.contactPageFormBox {
+  padding: 40px;
+  padding-top: 20px;
+}
+
+.contactPageFormBox h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contactPageFormBox form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contactPageFormBox form input,
+.contactPageFormBox form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 16px;
+}
+
+.contactPageFormBox form textarea {
+  resize: none;
+  max-height: 160px;
+  min-height: 160px;
+}
+
+.contactPageFormBox form button {
+  background-color: #003465;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 27px;
+  width: 418px;
+}
+
+.contactPageFormBox form button:hover {
+  background-color: #024786;
+}
+
+.profilePage {
+  text-align: left;
+  font-family: "Poppins";
+}
+
+.statsBox {
+  width: 1200px;
+  text-align: left;
+  padding: 15px;
+  height: 150px;
+  border-radius: 37px;
+  border: 1px solid #003465;
+}
+
+.line {
+  width: 9px;
+  height: 125px;
+  background-color: white;
+  position: absolute;
+  left: 300px;
+  bottom: 12px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 20px;
+}
+
+.endBtn {
+  width: 37px;
+  height: 150px;
+  border-radius: 0px 37px 37px 0px;
+  bottom: -0.5px;
+  background-color: white;
+  position: absolute;
+  right: -4px;
+  border: 1px solid #003465;
+  border-left: none;
+}
+
+.pencilIconBtn {
+  border: none;
+  position: absolute;
+}
+
+.pencilIcon {
+  font-size: 21px;
+}
+
+.endBtn:hover {
+  cursor: pointer;
+}
+
+.rightSideStatsBox {
+  position: absolute;
+  width: 790px;
+  height: 138px;
+  /* background-color: pink; */
+  top: 0px;
+  right: 63px;
+  padding-top: 5px;
+}
+
+.settingsBox {
+  top: 290px;
+  position: absolute;
+  left: 360px;
+  border-radius: 37px;
+  border: 1px solid #003465;
+  width: 550px;
+  height: 358px;
+}
+
+.settingsHeading {
+  color: white;
+  font-size: 45px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-shadow: 5px 5px 5px gray;
+}
+
+.settingsHr {
+  border: 1px solid white;
+  width: 500px;
+  box-shadow: 4px 4px 15px black;
+}
+
+.privacyModeText {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: white;
+}
+
+/* Basic styling for the toggle switch container */
+.toggle-switch {
+  position: absolute;
+  top: 105px;
+  right: 23px;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the checkbox input */
+.toggle-switch input {
+  display: none;
+}
+
+/* Styling for the toggle slider */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* Styling for the slider when the toggle is ON */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Styling for the slider when the toggle is OFF */
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.themeText {
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  padding-top: 28px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.themeChangeBtn {
+  border-radius: 14px;
+  height: 34px;
+  width: 300px;
+  border: none;
+  padding: 5px;
+  position: absolute;
+  bottom: 154px;
+  left: 225px;
+  color: white;
+  background-color: #003465;
+  font-weight: bold;
+}
+
+.themeChangeBtn:hover {
+  cursor: pointer;
+  background-color: #024786;
+}
+
+.signOutText {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 22px;
+}
+
+.signOutBtn {
+  border-radius: 14px;
+  height: 44px;
+  width: 505px;
+  border: none;
+  padding: 5px;
+  position: absolute;
+  bottom: 88px;
+  left: 20px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  transition: background-color 0.6s ease;
+}
+
+.signOutBtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.deleteAccountBtn {
+  border-radius: 14px;
+  height: 55px;
+  width: 505px;
+  border: none;
+  padding: 5px;
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  color: white;
+  background-color: #6d3333;
+  font-weight: bold;
+}
+
+.deleteAccountBtn:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.commentFormBox {
+  width: 628px;
+  height: 230px;
+  position: absolute;
+  right: 360px;
+  border-radius: 37px;
+  top: 290px;
+  border: 1px solid #003465;
+}
+
+.writeACommentText {
+  padding-top: 10px;
+  text-shadow: 5px 5px 5px gray;
+  color: white;
+}
+
+.commentForm {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.commentForm textarea {
+  resize: none;
+  padding: 10px;
+  font-family: inherit;
+  width: 500px;
+  border-radius: 13px;
+  max-height: 80px;
+  min-height: 80px;
+  width: 100%;
+}
+
+.commentForm button {
+  background-color: #003465;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  color: white;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.commentForm button:hover {
+  cursor: pointer;
+  background-color: #024786;
+}
+
+.dreamEntryCloud1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.dreamEntryCloud2 {
+  position: absolute;
+  z-index: -1;
+  top: 440px;
+  left: 230px;
+}
+
+.dreamEntryCloud3 {
+  position: absolute;
+  right: 1000px;
+}
+
+.dreamEntryCloud4 {
+  position: absolute;
+  top: 380px;
+  right: 700px;
+}
+
+.dreamsPage .dreamEntryCloud1 {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.dreamsPage .dreamEntryCloud2 {
+  position: absolute;
+  z-index: -1;
+  top: 350px;
+  left: 230px;
+}
+
+.dreamsPage .dreamEntryCloud3 {
+  position: absolute;
+  top: 50px;
+  right: 1000px;
+}
+
+.dreamsPage .dreamEntryCloud4 {
+  position: absolute;
+  top: 300px;
+  right: 700px;
+}
+
+.homePage .dreamEntryCloud1 {
+  position: absolute;
+  top: 130px;
+  left: 10px;
+}
+
+.homePage .dreamEntryCloud2 {
+  position: absolute;
+  z-index: -1;
+  top: 430px;
+  left: 100px;
+}
+
+.homePage .dreamEntryCloud3 {
+  position: absolute;
+  top: 220px;
+  right: 900px;
+}
+
+.homePage .dreamEntryCloud4 {
+  position: absolute;
+  top: 470px;
+  right: 700px;
+}
+
+.error,
+.successMsg,
+.successfulLoginMsg,
+.errorLoggingInMsg,
+.alreadyLoggedInErrorMsg {
+  width: 370px;
+  height: 35px;
+  padding: 3px;
+  font-size: 17px;
+  text-align: center;
+  background-color: rgb(122, 164, 226);
+  position: absolute;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  bottom: 160px;
+  border-radius: 10px;
+  left: 773px;
+}
+
+.error,
+.errorLoggingInMsg,
+.alreadyLoggedInErrorMsg {
+  background-color: rgb(48, 48, 145);
+}
+
+.successMsg {
+  width: 310px;
+  left: 800px;
+}
+
+.successfulLoginMsg {
+  width: 155px;
+  left: 885px;
+}
+
+.errorLoggingInMsg {
+  width: 245px;
+  left: 837px;
+}
+
+.alreadyLoggedInErrorMsg {
+  width: 440px;
+}
+
+.loginExag {
+  text-shadow: 0px 0px 20px black;
+  font-size: 16px;
+  margin-left: -5px;
+}
+
+.loginTextDiv {
+  margin-left: -1px;
+}
+
+.mustBeSignedInAddBtnText {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 16px;
+  bottom: 20px;
+}
+
+.mustBeSignedInAddBtn {
+  border: none;
+}
+
+.joinDate {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.usersName {
+  padding-left: 10px;
+}
+
+.usersNameContainer {
+  width: 260px;
+  height: 85px;
+}
+
+.usersNameContainer h1 {
+  word-wrap: break-word;
+}
+
+.formLabel {
+  text-shadow: 2px 2px 5px black;
+}
+
+.checkBoxLabel1,
+.checkBoxLabel2 {
+  text-shadow: 2px 2px 5px black;
+}
+
+.selectDuration option {
+  color: black;
+  font-family: "Poppins";
+}
+
+.selectDuration {
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  font-family: "Poppins";
+  margin-top: 30px;
+  margin-bottom: 8px;
+  border: none;
+}
+
+.selectMood option {
+  color: black;
+  font-family: "Poppins";
+}
+
+.selectMood:hover,
+.selectDuration:hover {
+  cursor: pointer;
+}
+
+.selectMood {
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  font-family: "Poppins";
+  margin-top: 30px;
+  margin-bottom: 8px;
+  border: none;
+}
+
+.usernameContainer {
+  background: rgba(88, 130, 193, 0.28);
+  position: absolute;
+  width: 180px;
+  left: 318px;
+  margin-top: -108px;
+  height: 60px;
+  border-radius: 0px 37px 0px 5px;
+  border: 2px solid #024786;
+}
+
+.usernameText {
+  text-align: center;
+  padding-top: 2px;
+}
+
+.noPostsText {
+  text-align: center;
+  font-size: 80px;
+  margin-top: 280px;
+  color: white;
+  text-shadow: 5px 5px 5px gray;
+}
+
+.oneDreamInList {
+  height: 730px;
+}
+
+.hideDreamBtn {
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+  position: absolute;
+  top: 100px;
+  right: -20px;
+  font-weight: bold;
+  background: rgba(88, 130, 193, 1);
+  border: 2px solid #024786;
+  font-family: "Times New Roman", Times, serif;
+  height: 90px;
+  width: 20px;
+}
+
+.hideDreamBtn:hover {
+  background-color: #2a81d3;
+  cursor: pointer;
+}
+
+.showDreamBtn {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  bottom: -1px;
+  border-radius: 20px;
+  width: 496px;
+  height: 43px;
+  text-shadow: 3px 3px 3px gray;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.showDreamBtn:hover {
+  cursor: pointer;
+  background: #024786;
+  filter: opacity(0.4);
+}
+
+.personalDreamContainer {
+  background: rgba(88, 130, 193, 0.7);
+}
+
+.error404Text {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.dreamTileBox:hover {
+  cursor: pointer;
+}
+
+.singleTileBox {
+  width: 1200px;
+  height: 100px;
+}
+
+.commentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 260px;
+  align-items: flex-start;
+  max-height: 315px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+}
+
+.commentTile {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  width: 628px;
+  height: 120px;
+  margin-left: 912px;
+  margin-top: 7px;
+  border: 1px solid #024786;
+  box-sizing: border-box;
+}
+
+.commentDateText {
+  text-align: left;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.commentCommentText {
+  text-align: left;
+  font-family: "Poppins";
+}
+
+.commentTextContainer {
+  margin-top: -4px;
+  overflow-wrap: break-word;
+  height: 60px;
+}
+
+.personalUserBox {
+  background: rgba(246, 248, 248, 0.144);
+}
+
+.youText {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Poppins";
+  margin-top: 13px;
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+.commentTrashIcon {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+.commentTrashIcon button {
+  border: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+.commentTrashIcon button:hover {
+  cursor: pointer;
+}
+
+.singleTileBox {
+  height: 600px;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.singleTileBox:hover {
+  cursor: default;
+}
+
+.singleTileDreamTitle {
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Poppins";
+  text-shadow: 6px 6px 6px gray;
+  padding-left: 30px;
+}
+
+.singleTileDreamUsername,
+.singleTileDreamDate,
+.singleTileDreamMood,
+.singleTileDreamUsername,
+.singleTileDreamPerDur,
+.singleTileDreamSetting,
+.singleTileDreamPeople,
+.singleTileDreamDescription,
+.singleTileDreamRecurring,
+.singleTileDreamLucid {
+  font-family: "Poppins";
+  text-shadow: 6px 6px 6px gray;
+  padding-top: 21px;
+  font-size: 25px;
+  padding-left: 30px;
+  /* border: 1px solid black; */
+}
+
+.singleTileDreamMood {
+  padding-top: 12px;
+}
+
+.singleTileDreamDescription {
+  position: absolute;
+  right: 30px;
+  top: 24px;
+  padding: 0px;
+  width: 530px;
+  height: 540px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.singleTileDreamPeople {
+  /* border: 1px solid black; */
+  width: 530px;
+  height: 90px;
+  margin-top: 3px;
+  padding-top: 0px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.singleTileDreamSetting {
+  /* border: 1px solid black; */
+  width: 530px;
+  height: 85px;
+  margin-top: 20px;
+  padding-top: 0px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.singleTileDreamRecurring {
+  position: absolute;
+  bottom: 27px;
+}
+
+.singleTileDreamLucid {
+  position: absolute;
+  left: 415px;
+  bottom: 27px;
+}
+
+.verticalLine {
+  width: 8px;
+  height: 558px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50px;
+  border: 2px solid #024786;
+  left: 600px;
+}
+
+.unexpandDreamBtn {
+  position: absolute;
+  border: 2px solid #024786;
+  height: 250px;
+  font-size: 60px;
+  top: 265px;
+  left: 307px;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins";
+  border-radius: 15px 0px 0px 15px;
+  background: rgba(88, 130, 193, 0.473);
+  width: 40px;
+}
+
+.unexpandDreamBtn:hover {
+  cursor: pointer;
+  background-color: #2a81d365;
+}
+
+.showSettingsBtn {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 50px;
+}
+
+.showSettingsBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.showDreamEntriesBtn {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 50px;
+}
+
+.showDreamEntriesBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.yourEntriesBox {
+  margin-top: 18px;
+  margin-right: 650px;
+  border-radius: 37px 37px 0px 0px;
+  border: 1px solid #003465;
+  width: 550px;
+  height: 68px;
+  padding-top: 10px;
+}
+
+.yourEntriesBox h1 {
+  color: white;
+  text-shadow: 5px 5px 5px gray;
+}
+
+.singleUserDreamsBox {
+  border-radius: 37px;
+  border: 1px solid #003465;
+  width: 550px;
+  height: 150px;
+  padding-top: 10px;
+  margin-right: 650px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.scrollableDiv {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 503px;
+  width: 1230px;
+  direction: rtl;
+  margin-right: 20px;
+}
+
+.unscrollableDiv {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 503px;
+  width: 1230px;
+  direction: rtl;
+  margin-right: 20px;
+}
+
+.singleDreamBoxTitle {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.singleDreamBoxDate {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+}
+
+.singleDreamBoxDescription {
+  width: 93%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.dreamTrashIcon button {
+  border: none;
+  background: none;
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  bottom: 10px;
+}
+
+.dreamTrashIcon button:hover {
+  cursor: pointer;
+}
+
+.noDreamEntries {
+  border-radius: 37px;
+}
+
+.linkToAddDreamPage {
+  background: none;
+  border: none;
+  color: white;
+  text-shadow: 4px 4px 4px gray;
+  font-weight: bold;
+  font-size: 35px;
+  padding-top: 2px;
+  text-align: center;
+  text-decoration: none;
+  width: 550px;
+  height: 68px;
+  border-radius: 37px;
+}
+
+.linkToAddDreamPage:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.linkToAddDreamPageDiv {
+  margin-top: -11px;
+  margin-right: 2px;
+}
+
+.smileyFaceIcon1 {
+  position: absolute;
+  left: 30px;
+  top: 11px;
+  font-size: 45px;
+}
+
+.smileyFaceIcon2 {
+  position: absolute;
+  right: 30px;
+  top: 11px;
+  font-size: 45px;
+}
+
+.rightSideStatsBox input {
+  padding: 6px;
+  border-radius: 13px;
+  border: none;
+  font-family: "Poppins";
+}
+
+.rightSideStatsBox button {
+  padding: 6px;
+  border-radius: 13px;
+  border: none;
+  font-family: "Poppins";
+  font-weight: bold;
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  width: 220px;
+  background-color: #003465;
+  color: white;
+}
+
+.newPasswordInput {
+  position: absolute;
+  right: 0px;
+  bottom: 47px;
+  width: 220px;
+}
+
+.newUsernameInput {
+  position: absolute;
+  right: 0px;
+  bottom: 90px;
+  width: 220px;
+}
+
+.rightSideStatsBox button:hover {
+  cursor: pointer;
+  background-color: #024786;
+}
+
+.dreamTileBox1:hover {
+  transform: scale(1.02);
+}
